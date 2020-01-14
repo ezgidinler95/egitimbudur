@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+header{
+  background-color: deepskyblue;
+}
+.logo{
+color: #fff !important;
+}
+.anasayfayazisi{
+  color: #fff !important;
+}
+a:hover{
+  color:red !important;
+}
