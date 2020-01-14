@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,26 +22,47 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: 'Lato', sans-serif;
 }
 
 header{
   background-color: deepskyblue;
 }
+
 .logo{
 color: #fff !important;
 }
+
 .anasayfayazisi{
   color: #fff !important;
+  font-family: 'Lato', sans-serif;
 }
+
 a:hover{
   color:red !important;
+  font-family: 'Lato', sans-serif;
+}
+
+.home-container{
+  background-image: url('image/resimiki.jpg');
+  background-size: cover;
+  height: 944px;
+}
+
+h1{
+color: darkgreen;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: uppercase;
+}
+
+.form{
+  width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+  margin-bottom: 10px;
+}
+.sifreunuttum{
+  margin-left: auto;
+  font-size: 12px;
 }

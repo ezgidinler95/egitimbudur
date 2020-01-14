@@ -7,19 +7,19 @@ class Header extends Component {
         return (
             <header>
                 <nav className="container navbar navbar-expand-lg navbar-light justify-content-between ">
-                    <a className="navbar-brand logo" href="#">Eğitim Budur</a>
+                    <a className="navbar-brand logo" href="/#">Eğitim Budur</a>
 
                     <button class="navbar-toggler" type="button" >  <span class="navbar-toggler-icon"></span> </button>
 
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/' href="">Ana Sayfa</Link>
+                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/' href="">ANA SAYFA</Link>
                         </li>
                         <li className="nav-item">
-                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/hakkımızda' href="">Hakkımızda</Link>
+                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/hakkımızda' href="">HAKKIMIZDA</Link>
                         </li>
                         <li className="nav-item">
-                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/iletisim' href="">İletişim</Link>
+                            <Link activeClassName="active" className="nav-link anasayfayazisi" to='/iletisim' href="">İLETİŞİM</Link>
                         </li>
                     </ul>
                 </nav>

@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 //import { connect } from 'react-redux'
 import Header from './components/Header';
+import Index from './components/index';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,8 @@ class App extends Component {
     return (
       <div className="App" >
         <div >
-          <Header />
+          <Header/>
+          <Index/>
         </div>
       </div >
     );
