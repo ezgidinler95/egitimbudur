@@ -1,18 +1,17 @@
-//import axios from 'axios';
+import axios from 'axios';
+import { API_URL } from '../config/config';
+
+export const ADD_USER_PENDING = "ADD_USER_PENDING";
+export const ADD_USER_FULFILLED = "ADD_USER_FULFILLED";
+export const ADD_USER_REJECTED = "ADD_USER_REJECTED";
 
 
-// export const USER_INIT_PENDING = "LOGIN_PERSON_PENDING";
-// export const USER_INIT_FULFILLED = "LOGIN_PERSON_FULFILLED";
-// export const USER_INIT_REJECTED = "LOGIN_PERSON_REJECTED";
-
-
-// export function userInıt({ email, password }) {
-
-//     return async dispatch => {
-//         await dispatch({
-//             type: "USER_INIT",
-//             payload: axios.post(`${API_URL}/user`, { email, password })
-//                 .then(result => result.data)
-//         })
-//     }
-// }
+export function addUser(user) {
+    return async dispatch => {
+        await dispatch({
+            type: "ADD_USER",
+            payload: axios.post(`${API_URL}/user`, user)
+                .then(result => result.data)
+        })
+    }
+}
