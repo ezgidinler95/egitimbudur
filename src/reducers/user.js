@@ -3,9 +3,9 @@ import {
 } from '../actionts/user';
 
 const initialState = {
-    loginResult: {},
-    person: {},
-    persons: [],
+    addUserResult: {},
+    user: {},
+    users: [],
 }
 
 export default (state = initialState, action) => {
@@ -13,18 +13,15 @@ export default (state = initialState, action) => {
         case ADD_USER_PENDING:
             return {
                 ...state,
-                addDepartmentLoading: true
             }
         case ADD_USER_FULFILLED:
             return {
                 ...state,
-                addDepartmentLoading: false,
-                addDepartmentResult: action.payload
+                addUserResult: action.payload
             }
         case ADD_USER_REJECTED:
             return {
                 ...state,
-                addDepartmentLoading: false
             }
         default:
             return state;
