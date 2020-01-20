@@ -6,23 +6,17 @@ import { addUser } from '../../actionts/user';
 class SingUp extends React.Component {
 
     handleAddUserSubmit = async (e, state) => {
-        console.log("buraya geldi")
         const user = {
             name: e.target.name.value,
             surname: e.target.surname.value,
             email: e.target.email.value,
             password: e.target.password.value,
         };
-        console.log("buraya geldi", user)
-        await this.props.addUser(user, this.props.token);
+        await this.props.addUser(user);
         if (this.props.addUserResult.code === 200) {
-            this.props.enqueueSnackbar("Kayıt ekleme işlemi başarılı.", {
-                variant: "success",
-                autoHideDuration: 3000
-            });
+            alert("Yeni üye başarıyla eklendi")
         }
     }
-
 
     render() {
         const onViewChange = this.props.onViewChange;
