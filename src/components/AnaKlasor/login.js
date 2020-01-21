@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { loginUser } from '../../actionts/user';
 
 
+
 class Login extends React.Component {
 
 
@@ -11,9 +12,16 @@ class Login extends React.Component {
             email: e.target.email.value,
             password: e.target.password.value,
         };
+
+        if (e.target.email.value === "" && e.target.password.value === "") {
+            alert("lütfen gerekli alanalrı doldurunuz");
+        }
+
         await this.props.loginUser(user);
         if (this.props.loginUserResult.code === 200) {
             window.location.href = "/note-calculation";
+        } else {
+            alert("emailve ya şifre hatalı.Tekrar deneyiniz.");
         }
     }
 
