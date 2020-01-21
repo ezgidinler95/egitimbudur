@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { loginUser } from '../../actionts/user';
 
+
 class Login extends React.Component {
 
 
@@ -12,7 +13,7 @@ class Login extends React.Component {
         };
         await this.props.loginUser(user);
         if (this.props.loginUserResult.code === 200) {
-            alert("giriş yaptınız")
+            window.location.href = "/note-calculation";
         }
     }
 
